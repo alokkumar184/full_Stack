@@ -1,0 +1,15 @@
+{
+  "name": "inbuit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fs.js",
+  "scripts": {
+    "start": "node StaticApi.js",
+    "dev": "nodemon http.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
