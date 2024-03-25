@@ -14,4 +14,4 @@ let server=http.createServer(function(req, res) {
 // port-6777 and avoid 8080 port 
 server.listen(6777)
 
-// in the Brower open localhost:6777
+// in the Bower open localhost:6777
