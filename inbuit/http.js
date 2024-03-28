@@ -6,7 +6,7 @@ let http=require('http');
 //Req- Means what pass to the server (params, query, body)
 // res- what server response (means get from server)
 let server=http.createServer(function(req, res) {
-   res.write("<h1> This  is node server111 new server create </h1>");
+   res.write("<h1> This1  is node111 1111111server111 new server create </h1>");
    res.end();  // close the server
 })
 
@@ -15,5 +15,4 @@ let server=http.createServer(function(req, res) {
 server.listen(6700)
 
 // in the Bower open localhost:6777
-
 // The prob in http server u can't create the route 
