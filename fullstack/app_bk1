@@ -1,18 +1,9 @@
 // Create server using express
 let express = require('express');
 let app= express();
-
-// here add one Line of env file
-let dotenv=require('dotenv')
-dotenv.config()
 // define port number
-let port=process.env.PORT || 7230;
+let port=8600;
 
-
-// here import
-
-let productRouter=require('./src/Router/ProductRoute')
-let categoriesRouter=require('./src/Router/categoriesRoute')
 
 
 ///define route here (get , post , put , delete)
@@ -81,8 +72,22 @@ app.get('/categories', function(req, res){
     res.send(categories);
   });
 
-app.use('/categories',categoriesRouter )
-app.use('/products', productRouter)
+
+// Details to manage if Both route will same 
+app.get("/details", function(req, res){
+  res.send('catgerfoirs details');
+})
+
+
+app.get("/details", function(req, res){
+    res.send('catgerfoirs1 details');
+  })
+
+
+
+
+
+
 // here categories
 app.get("/categories", function(res, req){
   res.send(categories)
@@ -90,19 +95,8 @@ app.get("/categories", function(res, req){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // here use part 
-app.listen(port, function(err){
+app.listen(8600, function(err){
     if(err) throw err;
     console.log(`server is running on port ${8600}`)
 })
