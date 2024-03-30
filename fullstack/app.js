@@ -10,10 +10,16 @@ let port=process.env.PORT || 7230;
 
 
 // here import
-
 let productRouter=require('./src/Router/ProductRoute')
 let categoriesRouter=require('./src/Router/categoriesRoute')
 
+
+// here static file path for view Html
+app.use(express.static((__dirname, 'public')));
+// Html file path 
+app.set('views', './src/views');
+//view engine name
+app.set('view engine', 'ejs');
 
 ///define route here (get , post , put , delete)
 // Get-means get or return the data 
@@ -23,7 +29,11 @@ let categoriesRouter=require('./src/Router/categoriesRoute')
 // default route
 app.get('/', function(req, res){
     // syntex of get or return is
-    res.send('Hii form express ')
+    // res.send('<h1>Hii form express </h1>')
+
+    // here render the index .ejs file
+    res.render('index',{title:'Home Page '})  // we are passing the the title variable to the index.ejs file
+
 })
 
 // Route
@@ -55,31 +65,7 @@ var product=[
 ]
 // categories
 
-var categories=[
-    {
-        "id": 1,
-        "title": "iPhone 9",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 549,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
-        "category": "smartphones",
-        "thumbnail": "...",
-        "images": ["...", "...", "..."]
-      }
-]
 
-// Product Route
-app.get('/product', function(req, res){
-    res.send(product)
-});
- 
-// Categories Route
-app.get('/categories', function(req, res){
-    res.send(categories);
-  });
 
 app.use('/categories',categoriesRouter )
 app.use('/products', productRouter)
@@ -87,16 +73,6 @@ app.use('/products', productRouter)
 app.get("/categories", function(res, req){
   res.send(categories)
 })
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -20,7 +20,9 @@ var categories=[
 // default route for category
 categoriesRouter.route('/')
                 .get(function (req, res) {
-                    res.send(categories)
+                    // res.send(categories)
+                         // here i want to send the data 
+                    res.render('categories', {title:'Category Page', data: categories})
                 })
 // details route for category
 
@@ -29,4 +31,6 @@ categoriesRouter.route('details')
                 res.send(" Category Details")
                })
 
+
+// Export this file for import in app.js
 module.exports = categoriesRouter

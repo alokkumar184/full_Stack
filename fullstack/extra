@@ -1,0 +1,269 @@
+https://code.visualstudio.com/  > Install
+https://nodejs.org/en > Install
+https://git-scm.com/downloads > Install
+https://github.com/ > Create Account
+https://github.com/Aakashdeveloper > Follow
+
+Chrome Extension
+https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
+
+NodejS
+Single Threaded Async Non-Blocking
+Create own server
+Open source
+
+
+
+https://code.visualstudio.com/ >>> Install
+https://nodejs.org/en >>>Install
+https://github.com/ >>> CreateAccount
+https://github.com/Aakashdeveloper >>> Follow
+https://git-scm.com/downloads >>> Install
+https://www.mongodb.com/try/download/community > Install
+
+//extension
+vscode-icons
+tabnine
+githistory
+gitlens
+
+JavaScript
+Ifelse,Function,object,JSON,Variables
+
+
+NPM
+Basic NodeJS(in built)(Os,file,http)
+NodeJS(full Stack App) (Node-EJs-Mongo-Express)
+Third Party Api (Weather Api)
+Node-Es6(.babel)
+Redis v3  > 6379
+Redis v4
+Redisv4 With Mongov5
+ImageUpload
+ImageUpload(formidable)
+Multer
+Redis Cloud
+Upload image in db
+S3 Imageupload
+MongoDb Basic >27017  (local/cloud)
+Zomato App backend
+Api with NodeJS(Rest)>1
+DashBoard(Crud)
+Swagger
+Testing 
+Github
+--Deployment of app---
+render
+Pm2
+Nginx
+Jenkins
+Docker
+Email With Node(nodemailer)
+TelegramChat
+Login/Logout(JWT)
+Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
+Oauth(with google)
+GraphQl API
+NodeJs with postgres
+FIREBASE
+Paytm-Payment
+Chatapp
+AWS lambda micorservice
+--------NOT---------
+React/Angular
+Html/css/jquery
+
+
+Npm 
+> Node Package manager
+Manage the package
+Run the app
+
+///////////
+JSON
+JavaScript Object Notation
+[
+    {
+        "name":"John",
+        "subject":"UI"
+    },
+    {
+        "name":"Rohit",
+        "subject":"Node"
+    }
+]
+
+Package.json
+> Starting point of the app
+> Contains all the npm package
+> Contain All the commands start,test
+> Meta Data (About application, Name,Version, description)
+
+///Step to generate package.json///
+* NodeJs must be installed in your system
+> go inside a folder where you want to generate package.json
+> npm init
+> answer all question
+> type "yes"
+
+
+
+///Step to install packages///
+> go inside a folder where you want to install packages
+> npm i packagename
+
+
+Node_modules > folder in which all the packages are installed locally
+package-lock.json > dependency tree
+
+Local
+> Local to each application
+> Added in package.json
+> They are a kind of main dependency
+> npm i packagename
+
+Dev
+> Only require at the time of development
+> look like local dependency but added in different object
+> npm i packagename --save-dev
+
+Global
+> Install in laptop
+> Not added in package.json
+> Only require to start or build the app
+> Can be use for any app in laptop
+
+
+# window
+> open cmd as admin
+> npm i -g package name
+
+# mac
+> open terminal
+> sudo npm i -g package name
+
+
+Ternary
+
+condition?if condition is true : condition is false
+
+let a = 10
+a>10?"Hiii":"Bie"
+"Bie"
+
+
+let a = 10
+a==10?"Hiii":"Bie"
+"Hiii"
+
+
+function add(a,b){
+    return a+b
+}
+
+
+add(1,2)
+
+
+/////
+params
+> What we pass after /
+> We need to define before using it
+> If defined then complousry to pass
+> Normally use for route
+
+queryParams
+> What we pass after ?
+> No need to define
+> not complousry to pass
+> Use for filtring purpose
+
+///es5
+var a = 10
+var b = "my age is "+a
+"my age is 10"
+
+//es6
+let a  = 10
+let b = `My age is ${a}`
+"my age is 10"
+
+// for import support
+
+"type": "module",
+import path from 'path';
+const __dirname = path.resolve();
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+
+/////////Redis////////////////
+KEYS *
+set keyname value
+get keyname
+del keyname
+FLUSHALL
+
+set keyname value ex time
+
+
+https://redis.io/download/
+
+
+
+
+C > Create > POST
+R > Read   > GET
+U > Update > PUT/PATCH
+D > Delete > DELETE
+
+
+npm i body-parser cors ejs express mongodb swagger-jsdoc swagger-ui-express
+npm i chai chai-http mocha --save-dev
+
+
+npm i -g pm2
+
+pm2 start filename
+pm2 stop
+pm2 status
+
+pm2 start filename -i processNumber
+
+
+www.test.com
+
+
+175.4.67.11:9809
+
+docker build . -t imagename
+docker run -p 3000:8000  imagename
+
+
+https://support.google.com/accounts/answer/185833?hl=en
+
+npm i jsonwebtoken mongoose@6.10.0 express body-parser cors bcryptjs @babel/core @babel/preset-env @babel/register
+
+//
+
+//dummy api
+> npm i -g json-server
+json-server --watch db.json --port 9911
+
+https://www.postgresql.org/download/
+5432
+
+//postgres
+> pg_ctl -D /usr/local/var/postgres start
+> pg_ctl -D /usr/local/var/postgres stop
+
+
+npm i -g firebase
+
+firebase init
+
+firebase deploy
+
+
+https://github.com/Aakashdeveloper/Node-Interview-Question
