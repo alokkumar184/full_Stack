@@ -1,0 +1,25 @@
+// i have one data set
+// sequel
+// roll_no  | Hindi  | english|
+// 1        |   80   |        |
+// 2        |        |   76   |
+// 3        |   88   |        |
+
+// MongoDB
+//  no sequel 
+// it's More easy , bcz node required json data
+// {
+//     {
+//         "Roll_No":1,
+//         "Hindi":80,
+//     }
+//     {
+//         "Roll_No":1,
+//         " english":80,
+//     }
+//     {
+//         "Roll_No":1,
+//         "Hindi":80,
+//     }
+// }
+

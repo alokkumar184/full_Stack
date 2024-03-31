@@ -8,10 +8,23 @@ dotenv.config()
 // define port number
 let port=process.env.PORT || 7230;
 
+/// Morgan
+let morgan=require('morgan')
 
+// here use the fs fro save the logs file
+let fs=require('fs');
+// helmet use for secure the app ( search and Read)
+let helmet=require('helmet')
+
+//use
+app.use(helmet())
+//Middleware
+app.use(morgan('short',{Stream:fs.createWriteStream('./app.logs')}))
 // here import
 let productRouter=require('./src/Router/ProductRoute')
-let categoriesRouter=require('./src/Router/categoriesRoute')
+let categoriesRouter=require('./src/Router/categoriesRoute');
+const { Stream } = require('stream');
+
 
 
 // here static file path for view Html
