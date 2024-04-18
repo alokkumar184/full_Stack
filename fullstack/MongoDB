@@ -23,3 +23,67 @@
 //     }
 // }
 
+    //sql         mongoDB
+    // Databse    Database
+    // Table      collection
+    // Row        Document
+    // Select     find
+    // insert     insert
+    // Update     update
+    // Delete     Remove
+
+    /// How to start the mongoDB server (Local // )
+    // #(window)
+    // 1) Start the mongoDb server (serverl always runing )
+    // Client is depends on the requirement
+
+1) How to start a server
+   > start server 
+   > Open Cmd and navigate to bin 
+   > Go inside the folder  c:\program file\mongoDb\5.5\server\bin
+   > Mongo 
+   (start server on port 27017)
+   > Do not close this cnd if using mongoDb
+   (Client ) ** Only require to test queries
+   -> Open cnd and navigate to bin
+   > Mongo
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+  > Show All Database
+    * show Databse
+    > Go inside database
+    *use database
+    > see all the collections 
+    * show all the collections
+    > see data inside collection
+
+    ...** see Data inside collection (find all record)
+      db.collection.find()
+      db.category.find()
+      *** Only for cmd lines
+      db.category.find().pretty()
+
+      > To Create Database
+      -use
+      > To insert record
+      db.collection.insert({})
+
+      db.user.insert("name":"Amit")
+
+
+      _id 
+
+      Default key(primery Keys)
+      > It always conatins unique value
+      > We can addd out own value to _id but should unique
+
+
+      Default (12 bytes)
+      > Rendom number (5 bytes)
+      series (3 bytes)
+      > Timestamp (4 bytes)
+
+
+// Class 11 (done)
